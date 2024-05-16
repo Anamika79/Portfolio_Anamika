@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anamika J</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav id="hamburger-nav">
+      <div class="logo">Anamika J</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section-->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.jpg"
+          alt="Profile picture"
+          class="profile-pic"
+        />
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anamika J</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn_container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact me
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="linkedin profile"
+            class="icon"
+            onclick="location.href = 'https://linkedin.com/in/anamika-j/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="github profile"
+            class="icon"
+            onclick="location.href = 'https://github.com/Anamika79'"
+          />
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow"
+        class="icon arrow"
+        onclick="location.href='./#about'"
+      />
+    </section>
+
+    <!-- About Section-->
+    <section id="about">
+      <p class="section__text__p1">Get to know me</p>
+      <h1 class="title">About me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile pic"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience pic"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1 year <br />Full stack development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education pic"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Technology <br />Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a budding software developer, I thrive on the challenges of
+              turning ideas into elegant, functional code. With a passion for
+              problem-solving and a drive for innovation, I am dedicated to
+              honing my skills and contributing meaningfully to the world of
+              technology.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- Experience Section-->
+    <section id="experience">
+      <p class="section__text__p1">Explore my</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <!-- Projects Section-->
+    <section id="projects">
+      <p class="section__text__p1">Browse my</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-container">
+          <div class="color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="project-1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project one</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Anamika79/JsonFormatter-Application'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://jsonformatterapp.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="project-1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project one</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Anamika79/JsonFormatter-Application'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://jsonformatterapp.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="project-1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project one</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Anamika79/JsonFormatter-Application'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://jsonformatterapp.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="project-1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project one</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Anamika79/JsonFormatter-Application'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://jsonformatterapp.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="project-1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project one</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Anamika79/JsonFormatter-Application'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://formatjson-app.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="project-1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project one</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Anamika79/JsonFormatter-Application'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://jsonformatterapp.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="arrow"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- Contact Section-->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="email-icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:anamikaofficial2022@gmail.com"
+              >anamikaofficial2022@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="linkedin-icon"
+            class="icon contact-icon"
+          />
+          <p><a href="www.linkedin.com/in/anamika-j">LinkedIn</a></p>
+        </div>
+      </div>
+      <footer>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <hr />
+        <div class="footer-icons">
+          <a
+            href="https://github.com/Anamika79"
+            alt="github"
+            class="github-icon"
+          >
+            <i class="fa fa-github footer-i"></i>
+          </a>
+          <a
+            href="www.linkedin.com/in/anamika-j"
+            alt="linkedin"
+            class="linkedin-icon"
+          >
+            <i class="fa fa-linkedin footer-i"></i>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=917025887564&text=Hi+Anamika"
+            alt="whatsapp"
+            class="whatsapp-icon"
+          >
+            <i class="fa fa-whatsapp footer-i"></i>
+          </a>
+          <a
+            href="https://twitter.com/Anamika_SW"
+            alt="twitter"
+            class="twitter-icon"
+          >
+            <i class="fa fa-twitter footer-i"></i>
+          </a>
+        </div>
+      </footer>
+      <div class="copyright">
+        <p class="section__text__p1">
+          Copyright &#169; 2024 Anamika J. All rights reserved
+        </p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
