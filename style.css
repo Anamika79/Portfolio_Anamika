@@ -347,6 +347,7 @@ article {
 #projects {
   position: relative;
   align-items: center;
+  margin-top: 50px;
 }
 
 .color-container {
